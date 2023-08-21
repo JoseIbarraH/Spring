@@ -9,4 +9,20 @@ public class Coordinador {
     private Long ID;
     @ManyToOne
     private Area area;
+
+    public Long getID() {
+        return ID;
+    }
+
+    public void setID(Long ID) {
+        this.ID = ID;
+    }
+
+    public Area getArea() {
+        return area;
+    }
+
+    public void setArea(Area area) {
+        this.area = area;
+    }
 }

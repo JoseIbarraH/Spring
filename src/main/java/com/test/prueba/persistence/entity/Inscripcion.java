@@ -13,4 +13,36 @@ public class Inscripcion {
     private Date FechaInscripcion;
     @ManyToOne
     private Usuario usuario;
+
+    public Long getID() {
+        return ID;
+    }
+
+    public void setID(Long ID) {
+        this.ID = ID;
+    }
+
+    public String getTipoVinculacion() {
+        return TipoVinculacion;
+    }
+
+    public void setTipoVinculacion(String tipoVinculacion) {
+        TipoVinculacion = tipoVinculacion;
+    }
+
+    public Date getFechaInscripcion() {
+        return FechaInscripcion;
+    }
+
+    public void setFechaInscripcion(Date fechaInscripcion) {
+        FechaInscripcion = fechaInscripcion;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }

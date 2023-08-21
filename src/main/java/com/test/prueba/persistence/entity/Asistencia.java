@@ -13,4 +13,36 @@ public class Asistencia {
     private Date Fecha;
     @ManyToOne
     private Inscripcion inscripcion;
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
+    }
+
+    public Boolean getAsistio() {
+        return Asistio;
+    }
+
+    public void setAsistio(Boolean asistio) {
+        Asistio = asistio;
+    }
+
+    public Date getFecha() {
+        return Fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        Fecha = fecha;
+    }
+
+    public Inscripcion getInscripcion() {
+        return inscripcion;
+    }
+
+    public void setInscripcion(Inscripcion inscripcion) {
+        this.inscripcion = inscripcion;
+    }
 }
